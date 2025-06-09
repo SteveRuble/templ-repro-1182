@@ -1,0 +1,12 @@
+package render_doc
+
+var test = "test"
+
+templ simpleRepro() {
+	if test == "test" {
+		<span>test</span>
+		// don't render a link for empty sections
+	} else {
+		<span>other</span>
+	}
+}
